@@ -23,10 +23,10 @@ public class GcdSum {
                 line[i] = sc.nextInt();
             }
 
-            int count = 0;
-            for (int j = 0; j < line.length-1; j++) {
-                for (int k = j+1; k < line.length; k++) {
-                    count+=getGcd(line[j], line[k]);
+            long count = 0;
+            for (int j = 0; j < num - 1; j++) {
+                for (int k = j+1; k < num; k++) {
+                    count += getGcd(line[j], line[k]);
                 }
             }
             bw.write(count+"\n");
