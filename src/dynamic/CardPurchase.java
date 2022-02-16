@@ -23,6 +23,10 @@ public class CardPurchase {
             }
         }
 
+        for (int i = 1; i <=n; i++) {
+            d[n] = Math.max(p[i]+d[n-i], d[n]);
+        }
+
         System.out.println(d[n]);
     }
 }
