@@ -22,7 +22,7 @@ public class TheLongestDecreasingMaxSubsequence {
 
             for (int j = 1; j < i; j++) {
                 if (a[i] < a[j] && d[j] + 1 > d[i] ) {
-                    d[i] = d[i] + 1;
+                    d[i] = d[j] + 1;
                 }
             }
         }
